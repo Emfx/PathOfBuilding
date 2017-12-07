@@ -207,7 +207,7 @@ function calcs.defence(env, actor)
 		if breakdown then
 			breakdown.MaxEnergyShieldLeechRate = {
 				s_format("%d ^8(maximum energy shield)", output.EnergyShield),
-				s_format("x %d%% ^8(percenage of life to maximum leech rate)", modDB:Sum("BASE", nil, "MaxLifeLeechRate")),
+				s_format("x %d%% ^8(percentage of life to maximum leech rate)", modDB:Sum("BASE", nil, "MaxLifeLeechRate")),
 				s_format("= %.1f", output.MaxEnergyShieldLeechRate)
 			}
 		end
@@ -216,7 +216,7 @@ function calcs.defence(env, actor)
 		if breakdown then
 			breakdown.MaxLifeLeechRate = {
 				s_format("%d ^8(maximum life)", output.Life),
-				s_format("x %d%% ^8(percenage of life to maximum leech rate)", modDB:Sum("BASE", nil, "MaxLifeLeechRate")),
+				s_format("x %d%% ^8(percentage of life to maximum leech rate)", modDB:Sum("BASE", nil, "MaxLifeLeechRate")),
 				s_format("= %.1f", output.MaxLifeLeechRate)
 			}
 		end
@@ -225,7 +225,7 @@ function calcs.defence(env, actor)
 	if breakdown then
 		breakdown.MaxManaLeechRate = {
 			s_format("%d ^8(maximum mana)", output.Mana),
-			s_format("x %d%% ^8(percenage of mana to maximum leech rate)", modDB:Sum("BASE", nil, "MaxManaLeechRate")),
+			s_format("x %d%% ^8(percentage of mana to maximum leech rate)", modDB:Sum("BASE", nil, "MaxManaLeechRate")),
 			s_format("= %.1f", output.MaxManaLeechRate)
 		}
 	end
